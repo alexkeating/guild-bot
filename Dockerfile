@@ -6,7 +6,4 @@ RUN pip install poetry
 COPY . /service
 
 RUN poetry install
-CMD python ./guild_bot
-
-
-
+CMD poetry run python ./guild_bot
